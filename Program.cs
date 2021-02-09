@@ -12,21 +12,16 @@ namespace FindSumOfPositiveElementsArray
             int totalSum = 0;
             for (int i = 0; i < myArray.Length; i++)
             {
-                if (myArray[i] > 0)
+                if (myArray[i] > 0) 
+                {
                     count++;
+                    totalSum += myArray[i];
+                }
             }
-            for (int i = 0; i < myArray.Length; i++) 
-            {
-                totalSum += myArray[i];
-            }
-
             Console.WriteLine("Number of positive elements =  " + count);
             Console.WriteLine(new String('-',37));
             Console.WriteLine("Total sum of positive elements =  " + totalSum);
-            Console.ReadKey();           //Number of positive elements =  9
-                                         //-------------------------------------
-                                        //Total sum of positive elements = 21
+            Console.ReadKey();          
         }
     }
-    
 }
